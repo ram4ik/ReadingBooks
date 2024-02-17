@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var launchAddNew = false
     
     var body: some View {
+        BookListView()
+        
         Button("Add new book") {
             launchAddNew.toggle()
         }

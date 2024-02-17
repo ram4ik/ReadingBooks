@@ -13,6 +13,7 @@
 		5255583B2B80B63B0010741A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5255583A2B80B63B0010741A /* Preview Assets.xcassets */; };
 		525558432B80B71A0010741A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558422B80B71A0010741A /* Book.swift */; };
 		525558462B80CB4D0010741A /* AddNewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558452B80CB4D0010741A /* AddNewBookView.swift */; };
+		525558482B80E72A0010741A /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558472B80E72A0010741A /* BookListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5255583A2B80B63B0010741A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		525558422B80B71A0010741A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		525558452B80CB4D0010741A /* AddNewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBookView.swift; sourceTree = "<group>"; };
+		525558472B80E72A0010741A /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				525558452B80CB4D0010741A /* AddNewBookView.swift */,
+				525558472B80E72A0010741A /* BookListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				525558462B80CB4D0010741A /* AddNewBookView.swift in Sources */,
 				525558362B80B63A0010741A /* ContentView.swift in Sources */,
+				525558482B80E72A0010741A /* BookListView.swift in Sources */,
 				525558342B80B63A0010741A /* ReadingBooksApp.swift in Sources */,
 				525558432B80B71A0010741A /* Book.swift in Sources */,
 			);
