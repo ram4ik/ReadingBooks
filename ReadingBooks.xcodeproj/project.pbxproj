@@ -14,6 +14,7 @@
 		525558432B80B71A0010741A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558422B80B71A0010741A /* Book.swift */; };
 		525558462B80CB4D0010741A /* AddNewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558452B80CB4D0010741A /* AddNewBookView.swift */; };
 		525558482B80E72A0010741A /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558472B80E72A0010741A /* BookListView.swift */; };
+		5255584A2B80EBBD0010741A /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558492B80EBBD0010741A /* BookCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		525558422B80B71A0010741A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		525558452B80CB4D0010741A /* AddNewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBookView.swift; sourceTree = "<group>"; };
 		525558472B80E72A0010741A /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		525558492B80EBBD0010741A /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				525558452B80CB4D0010741A /* AddNewBookView.swift */,
 				525558472B80E72A0010741A /* BookListView.swift */,
+				525558492B80EBBD0010741A /* BookCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525558462B80CB4D0010741A /* AddNewBookView.swift in Sources */,
+				5255584A2B80EBBD0010741A /* BookCellView.swift in Sources */,
 				525558362B80B63A0010741A /* ContentView.swift in Sources */,
 				525558482B80E72A0010741A /* BookListView.swift in Sources */,
 				525558342B80B63A0010741A /* ReadingBooksApp.swift in Sources */,
