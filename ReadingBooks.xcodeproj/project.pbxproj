@@ -15,6 +15,7 @@
 		525558462B80CB4D0010741A /* AddNewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558452B80CB4D0010741A /* AddNewBookView.swift */; };
 		525558482B80E72A0010741A /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558472B80E72A0010741A /* BookListView.swift */; };
 		5255584A2B80EBBD0010741A /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525558492B80EBBD0010741A /* BookCellView.swift */; };
+		5255584C2B80F4B40010741A /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5255584B2B80F4B40010741A /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		525558452B80CB4D0010741A /* AddNewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBookView.swift; sourceTree = "<group>"; };
 		525558472B80E72A0010741A /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		525558492B80EBBD0010741A /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
+		5255584B2B80F4B40010741A /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				525558452B80CB4D0010741A /* AddNewBookView.swift */,
 				525558472B80E72A0010741A /* BookListView.swift */,
 				525558492B80EBBD0010741A /* BookCellView.swift */,
+				5255584B2B80F4B40010741A /* BookDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				525558482B80E72A0010741A /* BookListView.swift in Sources */,
 				525558342B80B63A0010741A /* ReadingBooksApp.swift in Sources */,
 				525558432B80B71A0010741A /* Book.swift in Sources */,
+				5255584C2B80F4B40010741A /* BookDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
