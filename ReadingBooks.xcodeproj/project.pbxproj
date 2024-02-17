@@ -18,6 +18,7 @@
 		5255584C2B80F4B40010741A /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5255584B2B80F4B40010741A /* BookDetailView.swift */; };
 		52A5277E2B811A5500071C6F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5277D2B811A5500071C6F /* Note.swift */; };
 		52A527802B811C1400071C6F /* AddNewNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5277F2B811C1400071C6F /* AddNewNote.swift */; };
+		52A527822B812D8600071C6F /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527812B812D8600071C6F /* NotesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5255584B2B80F4B40010741A /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		52A5277D2B811A5500071C6F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		52A5277F2B811C1400071C6F /* AddNewNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewNote.swift; sourceTree = "<group>"; };
+		52A527812B812D8600071C6F /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				525558492B80EBBD0010741A /* BookCellView.swift */,
 				5255584B2B80F4B40010741A /* BookDetailView.swift */,
 				52A5277F2B811C1400071C6F /* AddNewNote.swift */,
+				52A527812B812D8600071C6F /* NotesListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				525558482B80E72A0010741A /* BookListView.swift in Sources */,
 				525558342B80B63A0010741A /* ReadingBooksApp.swift in Sources */,
 				525558432B80B71A0010741A /* Book.swift in Sources */,
+				52A527822B812D8600071C6F /* NotesListView.swift in Sources */,
 				5255584C2B80F4B40010741A /* BookDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
