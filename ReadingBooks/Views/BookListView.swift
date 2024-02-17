@@ -21,6 +21,9 @@ struct BookListView: View {
                 .onDelete(perform: delete(indexSet:))
             }
             .navigationTitle("Reading Books")
+            .navigationDestination(for: Book.self) { book in
+                BookDetailView(book: book)
+            }
         }
     }
     
