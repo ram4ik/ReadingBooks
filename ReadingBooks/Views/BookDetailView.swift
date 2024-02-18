@@ -49,16 +49,13 @@ struct BookDetailView: View {
             
             Spacer()
             
-            if let selectedCoverData,
-                let image = UIImage(
-                data: selectedCoverData) {
+            if let selectedCoverData, let image = UIImage(data: selectedCoverData) {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
                     .clipShape(.rect(cornerRadius: 5))
                     .frame(width: 100, height: 100)
-            } else if let cover = book.cover,
-                        let image = UIImage(data: cover) {
+            } else if let cover = book.cover, let image = UIImage(data: cover) {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
