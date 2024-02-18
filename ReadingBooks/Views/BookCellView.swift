@@ -12,17 +12,25 @@ struct BookCellView: View {
     
     var body: some View {
         NavigationLink(value: book) {
-            VStack(alignment: .leading) {
-                Text(book.title)
-                    .bold()
-                HStack {
-                    Text("Author: \(book.author)")
-                    Spacer()
-                    Text("Published on: \(book.publishedYear.description)")
+            HStack(alignment: .top) {
+                if let cover = book.cover, let image = UIImage(data: cover) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(.rect(cornerRadius: 5))
+                        .frame(height: 100)
                 }
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .padding(.top, 20)
+                
+                VStack(alignment: .leading) {
+                    Text(book.title)
+                        .bold()
+                    Group {
+                        Text("Author: \(book.author)")
+                        Text("Published on: \(book.publishedYear.description)")
+                    }
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                }
             }
         }
     }
