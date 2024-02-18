@@ -22,6 +22,7 @@
 		52A527842B81D9EF00071C6F /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527832B81D9EF00071C6F /* Genre.swift */; };
 		52A527862B81DADB00071C6F /* GenreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527852B81DADB00071C6F /* GenreListView.swift */; };
 		52A527882B81DCBA00071C6F /* AddNewGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527872B81DCBA00071C6F /* AddNewGenre.swift */; };
+		52A5278A2B81E2AF00071C6F /* GenreSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527892B81E2AF00071C6F /* GenreSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		52A527832B81D9EF00071C6F /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		52A527852B81DADB00071C6F /* GenreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListView.swift; sourceTree = "<group>"; };
 		52A527872B81DCBA00071C6F /* AddNewGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGenre.swift; sourceTree = "<group>"; };
+		52A527892B81E2AF00071C6F /* GenreSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				52A527812B812D8600071C6F /* NotesListView.swift */,
 				52A527852B81DADB00071C6F /* GenreListView.swift */,
 				52A527872B81DCBA00071C6F /* AddNewGenre.swift */,
+				52A527892B81E2AF00071C6F /* GenreSelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				52A527802B811C1400071C6F /* AddNewNote.swift in Sources */,
 				52A5277E2B811A5500071C6F /* Note.swift in Sources */,
 				525558482B80E72A0010741A /* BookListView.swift in Sources */,
+				52A5278A2B81E2AF00071C6F /* GenreSelectionView.swift in Sources */,
 				52A527882B81DCBA00071C6F /* AddNewGenre.swift in Sources */,
 				525558342B80B63A0010741A /* ReadingBooksApp.swift in Sources */,
 				525558432B80B71A0010741A /* Book.swift in Sources */,
