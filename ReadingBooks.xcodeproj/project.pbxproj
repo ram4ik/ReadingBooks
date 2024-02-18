@@ -25,6 +25,8 @@
 		52A5278A2B81E2AF00071C6F /* GenreSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527892B81E2AF00071C6F /* GenreSelectionView.swift */; };
 		52A5278C2B81F66F00071C6F /* GenreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5278B2B81F66F00071C6F /* GenreDetailView.swift */; };
 		52A5278E2B81FDCE00071C6F /* HiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5278D2B81FDCE00071C6F /* HiddenModifier.swift */; };
+		52A527992B8287E900071C6F /* GenreSortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527982B8287E900071C6F /* GenreSortOrder.swift */; };
+		52A5279B2B8288CE00071C6F /* GenreListSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5279A2B8288CE00071C6F /* GenreListSubview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		52A527892B81E2AF00071C6F /* GenreSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionView.swift; sourceTree = "<group>"; };
 		52A5278B2B81F66F00071C6F /* GenreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDetailView.swift; sourceTree = "<group>"; };
 		52A5278D2B81FDCE00071C6F /* HiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenModifier.swift; sourceTree = "<group>"; };
+		52A527982B8287E900071C6F /* GenreSortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSortOrder.swift; sourceTree = "<group>"; };
+		52A5279A2B8288CE00071C6F /* GenreListSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListSubview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				52A527832B81D9EF00071C6F /* Genre.swift */,
+				52A527982B8287E900071C6F /* GenreSortOrder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				52A527852B81DADB00071C6F /* GenreListView.swift */,
+				52A5279A2B8288CE00071C6F /* GenreListSubview.swift */,
 				52A527872B81DCBA00071C6F /* AddNewGenre.swift */,
 				52A527892B81E2AF00071C6F /* GenreSelectionView.swift */,
 				52A5278B2B81F66F00071C6F /* GenreDetailView.swift */,
@@ -266,7 +272,9 @@
 				52A527802B811C1400071C6F /* AddNewNote.swift in Sources */,
 				52A5277E2B811A5500071C6F /* Note.swift in Sources */,
 				525558482B80E72A0010741A /* BookListView.swift in Sources */,
+				52A5279B2B8288CE00071C6F /* GenreListSubview.swift in Sources */,
 				52A5278A2B81E2AF00071C6F /* GenreSelectionView.swift in Sources */,
+				52A527992B8287E900071C6F /* GenreSortOrder.swift in Sources */,
 				52A527882B81DCBA00071C6F /* AddNewGenre.swift in Sources */,
 				52A5278C2B81F66F00071C6F /* GenreDetailView.swift in Sources */,
 				52A5278E2B81FDCE00071C6F /* HiddenModifier.swift in Sources */,
