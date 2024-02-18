@@ -21,10 +21,15 @@ struct GenreListView: View {
         NavigationStack {
             List {
                 ForEach(genres) { genre in
-                    Text(genre.name)
+                    NavigationLink(value: genre) {
+                        Text(genre.name)
+                    }
                 }
                 .onDelete(perform: deleteGenre(indexSet:))
             }
+            .navigationDestination(for: Genre.self, destination: { genre in
+                GenreDetailView(genre: genre)
+            })
             .navigationTitle("Literary Genre")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

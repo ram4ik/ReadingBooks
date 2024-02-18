@@ -23,6 +23,7 @@
 		52A527862B81DADB00071C6F /* GenreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527852B81DADB00071C6F /* GenreListView.swift */; };
 		52A527882B81DCBA00071C6F /* AddNewGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527872B81DCBA00071C6F /* AddNewGenre.swift */; };
 		52A5278A2B81E2AF00071C6F /* GenreSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527892B81E2AF00071C6F /* GenreSelectionView.swift */; };
+		52A5278C2B81F66F00071C6F /* GenreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5278B2B81F66F00071C6F /* GenreDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		52A527852B81DADB00071C6F /* GenreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListView.swift; sourceTree = "<group>"; };
 		52A527872B81DCBA00071C6F /* AddNewGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGenre.swift; sourceTree = "<group>"; };
 		52A527892B81E2AF00071C6F /* GenreSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionView.swift; sourceTree = "<group>"; };
+		52A5278B2B81F66F00071C6F /* GenreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				52A527852B81DADB00071C6F /* GenreListView.swift */,
 				52A527872B81DCBA00071C6F /* AddNewGenre.swift */,
 				52A527892B81E2AF00071C6F /* GenreSelectionView.swift */,
+				52A5278B2B81F66F00071C6F /* GenreDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				525558482B80E72A0010741A /* BookListView.swift in Sources */,
 				52A5278A2B81E2AF00071C6F /* GenreSelectionView.swift in Sources */,
 				52A527882B81DCBA00071C6F /* AddNewGenre.swift in Sources */,
+				52A5278C2B81F66F00071C6F /* GenreDetailView.swift in Sources */,
 				525558342B80B63A0010741A /* ReadingBooksApp.swift in Sources */,
 				525558432B80B71A0010741A /* Book.swift in Sources */,
 				52A527822B812D8600071C6F /* NotesListView.swift in Sources */,
