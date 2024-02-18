@@ -58,6 +58,17 @@ struct BookDetailView: View {
                 Text(book.title)
                 Text(book.author)
                 Text(book.publishedYear.description)
+                
+                if !book.genre.isEmpty {
+                    HStack {
+                        ForEach(book.genre) { genre in
+                            Text(genre.name)
+                                .font(.caption)
+                                .padding(.horizontal)
+                                .background(.green.opacity(0.3), in: .capsule)
+                        }
+                    }
+                }
             }
             
             Section("Notes") {

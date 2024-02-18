@@ -52,6 +52,14 @@ struct AddNewBookView: View {
                     Button("Save") {
                         guard let publishedYear else { return }
                         let book = Book(title: title, author: author, publishedYear: publishedYear)
+                        
+                        book.genre = Array(selectedGenres)
+                        
+                        selectedGenres.forEach { genre in
+                            genre.books.append(book)
+                            context.insert(genre)
+                        }
+                        
                         context.insert(book)
                         
                         do {
