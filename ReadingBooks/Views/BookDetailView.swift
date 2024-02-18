@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct BookDetailView: View {
     let book: Book
@@ -23,6 +24,9 @@ struct BookDetailView: View {
     
     @State private var selectedGenres = Set<Genre>()
     
+    @State private var selectedCover: PhotosPickerItem?
+    @State private var selectedCoverData: Data?
+    
     init(book: Book) {
         self.book = book
         self._title = State.init(initialValue: book.title)
@@ -30,6 +34,43 @@ struct BookDetailView: View {
         self._publishedYear = State.init(initialValue: book.publishedYear)
         
         self._selectedGenres = State.init(initialValue: Set(book.genre))
+    }
+    
+    private var bookCoverUI: some View {
+        HStack {
+            PhotosPicker(
+                selection: $selectedCover,
+                matching: .images,
+                photoLibrary: .shared()
+            ) {
+                Label(book.cover == nil ? "Add Cover" : "Update Cover", systemImage: "book.closed")
+            }
+            .padding(.vertical)
+            
+            Spacer()
+            
+            if let selectedCoverData,
+                let image = UIImage(
+                data: selectedCoverData) {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(.rect(cornerRadius: 5))
+                    .frame(width: 100, height: 100)
+            } else if let cover = book.cover,
+                        let image = UIImage(data: cover) {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(.rect(cornerRadius: 5))
+                    .frame(width: 100, height: 100)
+            } else {
+                Image(systemName: "photo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+            }
+        }
     }
     
     var body: some View {
@@ -41,6 +82,8 @@ struct BookDetailView: View {
                     TextField("Published Year", value: $publishedYear, format: .number.grouping(.never))
                         .keyboardType(.numberPad)
                     
+                    bookCoverUI
+                    
                     GenreSelectionView(selectedGenres: $selectedGenres)
                         .frame(height: 300)
                 }
@@ -48,6 +91,7 @@ struct BookDetailView: View {
                 
                 Button("Save") {
                     guard let publishedYear = publishedYear else { return }
+                    
                     book.title = title
                     book.author = author
                     book.publishedYear = publishedYear
@@ -63,6 +107,10 @@ struct BookDetailView: View {
                         }
                     }
                     
+                    if let selectedCoverData {
+                        book.cover = selectedCoverData
+                    }
+                    
                     do {
                         try context.save()
                     } catch {
@@ -70,9 +118,10 @@ struct BookDetailView: View {
                     }
                     
                     dismiss()
-                    
                 }
-            } else {
+                
+            }
+            else {
                 Text(book.title)
                 Text(book.author)
                 Text(book.publishedYear.description)
@@ -128,6 +177,11 @@ struct BookDetailView: View {
                     isEditing.toggle()
                 }
                 .hidden(isEnabled: isEditing)
+            }
+        }
+        .task(id: selectedCover) {
+            if let data = try? await selectedCover?.loadTransferable(type: Data.self) {
+                selectedCoverData = data
             }
         }
         .navigationTitle("Book Detail")
