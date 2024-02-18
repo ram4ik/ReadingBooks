@@ -14,6 +14,9 @@ final class Book {
     var author: String
     var publishedYear: Int
     
+    @Attribute(.externalStorage)
+    var cover: Data?
+    
     @Relationship(deleteRule: .cascade, inverse: \Note.book)
     var notes = [Note]()
     
