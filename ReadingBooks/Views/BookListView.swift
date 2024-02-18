@@ -13,13 +13,23 @@ struct BookListView: View {
     @Query private var books: [Book]
     @State private var presentAddNew = false
     
+    @State private var searchTerm: String = ""
+    
+    var filteredBooks: [Book] {
+        guard searchTerm.isEmpty == false else { return books }
+        return books.filter {
+            $0.title.localizedCaseInsensitiveContains(searchTerm)
+        }
+    }
+    
     var body: some View {
         NavigationStack {
             List {
-                ForEach(books) { book in
+                ForEach(filteredBooks) { book in
                     BookCellView(book: book)
                 }
                 .onDelete(perform: delete(indexSet:))
+                .searchable(text: $searchTerm, prompt: "Search book title")
             }
             .navigationTitle("Reading Books")
             .navigationDestination(for: Book.self) { book in
