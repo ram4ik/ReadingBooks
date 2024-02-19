@@ -27,6 +27,7 @@
 		52A5278E2B81FDCE00071C6F /* HiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5278D2B81FDCE00071C6F /* HiddenModifier.swift */; };
 		52A527992B8287E900071C6F /* GenreSortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527982B8287E900071C6F /* GenreSortOrder.swift */; };
 		52A5279B2B8288CE00071C6F /* GenreListSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5279A2B8288CE00071C6F /* GenreListSubview.swift */; };
+		52A5279D2B83D4AE00071C6F /* BookListSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5279C2B83D4AE00071C6F /* BookListSubview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		52A5278D2B81FDCE00071C6F /* HiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenModifier.swift; sourceTree = "<group>"; };
 		52A527982B8287E900071C6F /* GenreSortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSortOrder.swift; sourceTree = "<group>"; };
 		52A5279A2B8288CE00071C6F /* GenreListSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListSubview.swift; sourceTree = "<group>"; };
+		52A5279C2B83D4AE00071C6F /* BookListSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListSubview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				525558452B80CB4D0010741A /* AddNewBookView.swift */,
 				525558472B80E72A0010741A /* BookListView.swift */,
+				52A5279C2B83D4AE00071C6F /* BookListSubview.swift */,
 				525558492B80EBBD0010741A /* BookCellView.swift */,
 				5255584B2B80F4B40010741A /* BookDetailView.swift */,
 			);
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A5279D2B83D4AE00071C6F /* BookListSubview.swift in Sources */,
 				525558462B80CB4D0010741A /* AddNewBookView.swift in Sources */,
 				5255584A2B80EBBD0010741A /* BookCellView.swift in Sources */,
 				525558362B80B63A0010741A /* ContentView.swift in Sources */,
