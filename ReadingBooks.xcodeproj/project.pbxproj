@@ -28,6 +28,7 @@
 		52A527992B8287E900071C6F /* GenreSortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A527982B8287E900071C6F /* GenreSortOrder.swift */; };
 		52A5279B2B8288CE00071C6F /* GenreListSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5279A2B8288CE00071C6F /* GenreListSubview.swift */; };
 		52A5279D2B83D4AE00071C6F /* BookListSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5279C2B83D4AE00071C6F /* BookListSubview.swift */; };
+		52A5279F2B83D84D00071C6F /* SortingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5279E2B83D84D00071C6F /* SortingOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		52A527982B8287E900071C6F /* GenreSortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSortOrder.swift; sourceTree = "<group>"; };
 		52A5279A2B8288CE00071C6F /* GenreListSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListSubview.swift; sourceTree = "<group>"; };
 		52A5279C2B83D4AE00071C6F /* BookListSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListSubview.swift; sourceTree = "<group>"; };
+		52A5279E2B83D84D00071C6F /* SortingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				525558422B80B71A0010741A /* Book.swift */,
+				52A5279E2B83D84D00071C6F /* SortingOption.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				5255584A2B80EBBD0010741A /* BookCellView.swift in Sources */,
 				525558362B80B63A0010741A /* ContentView.swift in Sources */,
 				52A527842B81D9EF00071C6F /* Genre.swift in Sources */,
+				52A5279F2B83D84D00071C6F /* SortingOption.swift in Sources */,
 				52A527802B811C1400071C6F /* AddNewNote.swift in Sources */,
 				52A5277E2B811A5500071C6F /* Note.swift in Sources */,
 				525558482B80E72A0010741A /* BookListView.swift in Sources */,
