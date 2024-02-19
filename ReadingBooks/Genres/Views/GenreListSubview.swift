@@ -18,17 +18,23 @@ struct GenreListSubview: View {
     }
     
     var body: some View {
-        List {
-            ForEach(genres) { genre in
-                NavigationLink(value: genre) {
-                    Text(genre.name)
+        Group {
+            if !genres.isEmpty {
+                List {
+                    ForEach(genres) { genre in
+                        NavigationLink(value: genre) {
+                            Text(genre.name)
+                        }
+                    }
+                    .onDelete(perform: deleteGenre(indexSet:))
                 }
+                .navigationDestination(for: Genre.self, destination: { genre in
+                    GenreDetailView(genre: genre)
+                })
+            } else {
+                ContentUnavailableView("Time to add new Genre!", systemImage: "square.3.layers.3d.down.left.slash")
             }
-            .onDelete(perform: deleteGenre(indexSet:))
         }
-        .navigationDestination(for: Genre.self, destination: { genre in
-            GenreDetailView(genre: genre)
-        })
     }
     
     private func deleteGenre(indexSet: IndexSet) {
